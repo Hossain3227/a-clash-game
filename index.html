@@ -68,29 +68,32 @@
                         <kbd id="l" class="kbd">l</kbd>
                       </div> 
                       <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd">z</kbd>
-                        <kbd class="kbd">x</kbd>
-                        <kbd class="kbd">c</kbd>
-                        <kbd class="kbd">v</kbd>
-                        <kbd class="kbd">b</kbd>
-                        <kbd class="kbd">n</kbd>
-                        <kbd class="kbd">m</kbd>
-                        <kbd class="kbd">/</kbd>
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
                       </div>
                 </div>
                 <!-- keyboard ends -->
 
                 <div class="flex justify-between w-2/4">
+
+                    <!-- display life -->
                     <button class="btn rounded-full bg-purple-400 text-white px-4">
                         Life
                         <img src="images/Group 23.svg" alt="">
-                        <span>1</span>
+                        <span id="current-life">5</span>
                       </button>
 
+                      <!-- display score -->
                       <button class="btn rounded-full bg-purple-700 text-white px-4">
                         Score
                         <img src="images/monetization_on.svg" alt="">
-                        <span>1</span>
+                        <span id="current-score">0</span>
                       </button>
                 </div>
             </div>
@@ -99,13 +102,14 @@
        
      <!-- scoreboard starts here -->
      
-     <section class="score flex justify-center items-center min-h-screen hidden">
+     <section id="final-score" class="flex  justify-center items-center min-h-screen hidden">
        <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+        <h4 class="text-3xl">Game-Over!</h4>
         <h1 class="text-8xl">
             <span class="font font-extrabold">Score:</span>
-            <span>14</span>
+            <span id="game-score">14</span>
         </h1>
-            <button class="btn bg-gray-800 text-white">Play again</button>
+            <button onclick="play()" class="btn bg-gray-800 text-white">Play again</button>
             <p class="text-2xl">practice will make u a pro</p>
        </div>
         </section>
